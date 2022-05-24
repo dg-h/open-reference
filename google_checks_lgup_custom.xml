@@ -43,7 +43,7 @@
   <module name="LineLength">
     <property name="fileExtensions" value="java"/>
     <property name="max" value="100"/>
-    <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
+    <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://|&quot;.*&quot;"/>
   </module>
 
   <module name="TreeWalker">
@@ -314,7 +314,6 @@
       <message key="name.invalidPattern"
              value="Method name ''{0}'' must match pattern ''{1}''."/>
     </module>
-    <module name="SingleLineJavadoc"/>
     <module name="EmptyCatchBlock">
       <property name="exceptionVariableName" value="expected"/>
     </module>
